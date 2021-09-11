@@ -116,6 +116,6 @@ FUN_NAME = async () => {
 }
 ```
 
-[Mongodb](https://www.mongodb.com/)
-[Official Documentation](https://docs.mongodb.com/)
+[Mongodb](https://www.mongodb.com/)\
+[Official Documentation](https://docs.mongodb.com/)\
 [Cheat Sheet](https://www.mongodb.com/developer/quickstart/cheat-sheet/)
