@@ -18,4 +18,4 @@ const schema = new Schema({
 })
 
 const COLLECTION_NAME = mongoose.model("COLLECTION_NAME", schema)
-module.exports = cart
+module.exports = COLLECTION_NAME
