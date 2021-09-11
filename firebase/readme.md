@@ -2,14 +2,14 @@
 const firebase = require("...")
 ```
 
-#FIREBASE FIRESTORE
+# FIREBASE FIRESTORE
 
 ```javascript
 const db = firebase.firestore()
 const DB_COLLECTION_NAME = db.collection("COLLECTION_NAME")
 ```
 
-##INSERT
+## INSERT
 
 ```javascript
 const newData = {
@@ -21,37 +21,37 @@ const newData = {
 DB_COLLECTION_NAME.set(newData).then((res) => { console.log(res) }).catch((err) => { console.log(err); })
 ```
 
-##GET ALL DATA
+## GET ALL DATA
 
 ```javascript
 DB_COLLECTION_NAME.get().then((snap) => { snap.forEach((doc) => { console.log(doc); }) }).catch((err) => { console.log(err); })
 ```
 
-##GET ONE DATA
+## GET ONE DATA
 
 ```javascript
 DB_COLLECTION_NAME.doc(DOC_ID).get().then((doc) => { console.log(doc); }).catch((err) => { console.log(err); })
 ```
 
-##FILTER
+## FILTER
 
 ```javascript
 DB_COLLECTION_NAME.where("name", "==", "sam").get().then((snap) => { snap.forEach((doc) => { console.log(doc); }) }).catch((err) => { console.log(err); })
 ```
 
-##ORDER BY DESC
+## ORDER BY DESC
 
 ```javascript
 DB_COLLECTION_NAME.orderBy("date", "desc").get().then((snap) => { snap.forEach((doc) => { console.log(doc); }) }).catch((err) => { console.log(err); })
 ```
 
-##ORDER BY ASC
+## ORDER BY ASC
 
 ```javascript
 DB_COLLECTION_NAME.orderBy("date", "asc").get().then((snap) => { snap.forEach((doc) => { console.log(doc); }) }).catch((err) => { console.log(err); })
 ```
 
-##UPDATE
+## UPDATE
 
 ```javascript
 const updateData = {
@@ -61,7 +61,7 @@ const updateData = {
 DB_COLLECTION_NAME.doc(DOC_ID).update(updateData).then((res) => { console.log(res) }).catch((err) => { console.log(err); })
 ```
 
-##DELETE
+## DELETE
 
 ```javascript
 DB_COLLECTION_NAME.doc(DOC_ID).delete().then((doc) => { console.log(doc); }).catch((err) => { console.log(err); })
@@ -75,7 +75,7 @@ const db = firebase.database()
 const DB_COLLECTION_NAME = db.ref("COLLECTION_NAME")
 ```
 
-##INSERT
+## INSERT
 
 ```javascript
 const newData = {
@@ -89,7 +89,7 @@ DB_COLLECTION_NAME.set(newData).then((res) => { console.log(res) }).catch((err) 
 DB_COLLECTION_NAME.push(newData).then((res) => { console.log(res) }).catch((err) => { console.log(err); })
 ```
 
-##GET ALL DATA
+## GET ALL DATA
 
 ```javascript
 DB_COLLECTION_NAME.on('value', (snapshot) => { console.log(snapshot.val()); }).catch((err) => { console.log(err); })
@@ -97,19 +97,19 @@ DB_COLLECTION_NAME.on('value', (snapshot) => { console.log(snapshot.val()); }).c
 DB_COLLECTION_NAME.once('value', (snapshot) => { console.log(snapshot.val()); }).catch((err) => { console.log(err); })
 ```
 
-##GET ONE DATA
+## GET ONE DATA
 
 ```javascript
 DB_COLLECTION_NAME.child(DOC_ID).get().then((snapshot) => { console.log(snapshot.val()); }).catch((err) => { console.log(err); })
 ```
 
-##FILTER
+## FILTER
 
 ```javascript
 DB_COLLECTION_NAME.where("name", "==", "sam").get().then((snap) => { snap.forEach((doc) => { console.log(doc); }) }).catch((err) => { console.log(err); })
 ```
 
-##UPDATE
+## UPDATE
 
 ```javascript
 const updateData = {
@@ -119,7 +119,7 @@ const updateData = {
 DB_COLLECTION_NAME.child(DOC_ID).update(updateData).then((snap) => { console.log(snap) }).catch((err) => { console.log(err); })
 ```
 
-##DELETE
+## DELETE
 
 ```javascript
 DB_COLLECTION_NAME.doc(DOC_ID).delete().then((snap) => { console.log(snap); }).catch((err) => { console.log(err); })

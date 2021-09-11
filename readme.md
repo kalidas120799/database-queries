@@ -2,6 +2,6 @@
 
 DATABASE | QUERIES
 ------------ | -------------
-Firebase | [Readme](http://google.com)
-Mongodb | [Readme](http://google.com)
-Mysql | [Readme](http://google.com)
+Firebase | [Readme]https://github.com/kalidas120799/database-queries/blob/master/firebase/readme.md)
+Mongodb | [Readme](https://github.com/kalidas120799/database-queries/blob/master/mongodb/readme.md)
+Mysql | [Readme](https://github.com/kalidas120799/database-queries/blob/master/mysql/readme.md)

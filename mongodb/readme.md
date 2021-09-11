@@ -1,10 +1,10 @@
-##INIT MODEL
+## INIT MODEL
 
 ```javascript
 const MODEL_NAME = require("...")
 ```
 
-##INSERT
+## INSERT
 
 ```javascript
 FUN_NAME = async () => {
@@ -16,7 +16,7 @@ FUN_NAME = async () => {
 }
 ```
 
-##GET ALL DATA
+## GET ALL DATA
 
 ```javascript
 FUN_NAME = async () => {
@@ -25,7 +25,7 @@ FUN_NAME = async () => {
 }
 ```
 
-##FILTER
+## FILTER
 
 ```javascript
 FUN_NAME = async () => {
@@ -37,7 +37,7 @@ FUN_NAME = async () => {
 }
 ```
 
-##UPDATE 
+## UPDATE 
 
 ```javascript
 FUN_NAME = async () => {
@@ -100,7 +100,7 @@ FUN_NAME = async () => {
 }
 ```
 
-##DELETE
+## DELETE
 
 ```javascript
 FUN_NAME = async () => {

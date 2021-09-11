@@ -2,7 +2,7 @@
 const db = require("...")
 ```
 
-##CREATE TABLE
+## CREATE TABLE
 
 ```javascript
 const myquery = "CREATE TABLE TABLE_NAME (id INT(255) AUTO_INCREMENT,name VARCHAR(255),date VARCHAR(255))"
@@ -16,7 +16,7 @@ db.query(myquery, (err, res) => {
 })
 ```
 
-##INSERT
+## INSERT
 
 ```javascript
 const myquery = "INSERT INTO TABLE_NAME SET ?"
@@ -35,7 +35,7 @@ db.query(myquery, newData, (err, res) => {
 })
 ```
 
-##VIEW ALL DATA 
+## VIEW ALL DATA 
 
 ```javascript
 const myquery = "SELECT * FROM TABLE_NAME"
@@ -49,7 +49,7 @@ db.query(myquery, (err, res) => {
 })
 ```
 
-##WHERE (filter)
+## WHERE (filter)
 
 ```javascript
 const myquery = "SELECT * FROM TABLE_NAME WHERE name=?"
@@ -63,7 +63,7 @@ db.query(myquery, ["sam"], (err, res) => {
 })
 ```
 
-##UPDATE
+## UPDATE
 
 ```javascript
 const myquery = "UPDATE TABLE_NAME SET ? WHERE id = ?"
@@ -81,7 +81,7 @@ db.query(myquery, [1, updateData], (err, res) => {
 })
 ```
 
-##DELETE
+## DELETE
 
 ```javascript
 const myquery = "DELETE FROM TABLE_NAME WHERE id= ?"
@@ -95,7 +95,7 @@ db.query(myquery, [1], (err, res) => {
 })
 ```
 
-##JOIN TWO TABLES
+## JOIN TWO TABLES
 
 ```javascript
 const myquery = "SELECT * from TABLE_NAME_1,TABLE_NAME_2 WHERE TABLE_NAME_1.id=TABLE_NAME_2.id"
@@ -109,7 +109,7 @@ db.query(myquery, (err, res) => {
 })
 ```
 
-##ORDER BY DESC
+## ORDER BY DESC
 
 ```javascript
 const myquery = "SELECT * from TABLE_NAME ORDER BY id DESC"
@@ -123,7 +123,7 @@ db.query(myquery, (err, res) => {
 })
 ```
 
-##ORDER BY ASC
+## ORDER BY ASC
 
 ```javascript
 const myquery = "SELECT * from TABLE_NAME ORDER BY id ASC"
@@ -137,7 +137,7 @@ db.query(myquery, (err, res) => {
 })
 ```
 
-##DROP TABLE 
+## DROP TABLE 
 
 ```javascript
 const myquery = "DROP TABLE TABLE_NAME"
@@ -151,7 +151,7 @@ db.query(myquery, (err, res) => {
 })
 ```
 
-##EMPTY TABLE 
+## EMPTY TABLE 
 
 ```javascript
 const myquery = "TRUNCATE TABLE_NAME"
