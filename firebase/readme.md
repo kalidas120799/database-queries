@@ -125,7 +125,7 @@ DB_COLLECTION_NAME.child(DOC_ID).update(updateData).then((snap) => { console.log
 DB_COLLECTION_NAME.doc(DOC_ID).delete().then((snap) => { console.log(snap); }).catch((err) => { console.log(err); })
 ```
 
-#FIREBASE STORAGE
+# FIREBASE STORAGE
 
 ```javascript
 async function uploadImage(file) {
