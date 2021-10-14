@@ -133,7 +133,7 @@ async function uploadImage(file) {
         var path = `file/${userid}/`
         var fileName = `${Date.now().toString()}.${extention}`
         var storageRef = firebase.storage().ref(path + fileName);
-        storageRef.put(file2).then(function (snapshot) {
+        storageRef.put(file).then(function (snapshot) {
             console.log('Uploaded a blob or file!');
             storageRef.getDownloadURL().then(function (url) {
                 resolve(url)
