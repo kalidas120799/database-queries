@@ -147,7 +147,7 @@ async function uploadImage(file) {
 ```
 
 [Firebase](https://firebase.google.com/)\
-[Official Documentation](https://firebase.google.com/docs/)\
+[Official Documentation](https://firebase.google.com/docs/)
 
 
 
